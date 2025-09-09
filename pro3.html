@@ -1,0 +1,229 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flower Shop</title>
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #e91e63;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.icons i {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.products {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.products h2 span {
+  color: #e91e63;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px;
+  position: relative;
+  transition: 0.3s;
+  margin-right: 160px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+.product-card .discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e91e63;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.product-card .icons-bar {
+  margin-top: 10px;
+  display: none;
+}
+
+.product-card:hover .icons-bar {
+  display: block;
+}
+
+.product-card button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.price span {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.second{
+   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <header>
+    <div class="logo">Flower.com<span></span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">Review</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-user"></i>
+    </div>
+  </header>
+
+  <section class="products">
+    <h2>Latest <span>Products</span></h2>
+    <div class="product-container">
+      
+      <!-- Card 1 -->
+      <div class="product-card">
+        <span class="discount">-10%</span>
+        <img src="lotus.jpg" alt="Flower Pot">
+        <div class="icons-bar">
+          <button>Add To Cart</button>
+        </div>
+        <h3>Flower Pot</h3>
+        <div class="price">$15.99 <span>$18.99</span></div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product-card">
+        <span class="discount">-15%</span>
+        <img src="pinkh.jpg" alt="Flower Pot">
+        <h3>Flower Pot</h3>
+        <div class="price">$15.99 <span>$18.99</span></div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product-card">
+        <span class="discount">-5%</span>
+        <img src="red.jpg" alt="Flower Pot">
+        <h3>Flower Pot</h3>
+        <div class="price">$15.99 <span>$18.99</span></div>
+      </div>
+    
+
+    </div>
+    </section>
+    <section class="sec">
+    <div class="product-card">
+        <span class="discount">-5%</span>
+        <img src="sun.jpeg" alt="Flower Pot">
+        <h3>Flower Pot</h3>
+        <div class="price">$15.99 <span>$18.99</span></div>
+      </div>
+      <div class="product-card">
+        <span class="discount">-5%</span>
+        <img src="sun.jpeg" alt="Flower Pot">
+        <h3>Flower Pot</h3>
+        <div class="price">$15.99 <span>$18.99</span></div>
+      </div>
+      <div class="product-card">
+        <span class="discount">-5%</span>
+        <img src="sun.jpeg" alt="Flower Pot">
+        <h3>Flower Pot</h3>
+        <div class="price">$15.99 <span>$18.99</span></div>
+      </div>
+      <div class="product-card">
+        <span class="discount">-5%</span>
+        <img src="sun.jpeg" alt="Flower Pot">
+        <h3>Flower Pot</h3>
+        <div class="price">$15.99 <span>$18.99</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
